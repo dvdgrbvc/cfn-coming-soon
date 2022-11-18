@@ -12,7 +12,7 @@
     "react-useinterval": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "start:lambda": "netlify-lambda serve src/functions",
     "build": "run-p build:**",
     "build:app": "react-scripts build",

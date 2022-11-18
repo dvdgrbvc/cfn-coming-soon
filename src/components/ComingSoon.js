@@ -5,7 +5,7 @@ import Description from "./Description";
 import Links from "./Links";
 import Countdown from "./Countdown";
 import Subscribe from "./Subscribe";
-import logo from "../images/gear-with-holes.svg";
+import logo from "../images/Wheel.png";
 import xmark from "../images/x-mark.svg";
 import check from "../images/check-mark.svg";
 import facebook from "../images/fbookicon.svg";
@@ -14,10 +14,11 @@ import youtube from "../images/youtubeicon.svg";
 import twitter from "../images/twittericon.svg";
 import "../styles/ComingSoon.css";
 
+
 class ComingSoon extends Component {
   state = {
     countdown: {
-      countdownDate: "2020-12-31 00:00:00"
+      countdownDate: "2023-02-02 00:00:00"
     },
     logo: {
       alt: "Spinning Gear",
@@ -25,11 +26,11 @@ class ComingSoon extends Component {
       spinSpeed: "slow"
     },
     title: {
-      text: "Coming Soon!"
+      text: "Wir sind bald!"
     },
     description: {
       text:
-        "The Coding From Null course platform will be up and running shortly. Please subscribe to our newsletter below to receive updates when new course material is available."
+        "Landheld ist bald für Sie verfügbar. Melde dich bei unserem Newsletter an um keine Neuigkeiten zu verpassen!"
     },
     subscribe: {
       placeholder: "Enter Email Address",
@@ -116,7 +117,6 @@ class ComingSoon extends Component {
 
     return (
       <div className="background">
-        <Countdown countdownDate={countdown.countdownDate} />
         <Logo alt={logo.alt} src={logo.src} spinSpeed={logo.spinSpeed} />
         <Title text={title.text} />
         <Description
@@ -134,10 +134,12 @@ class ComingSoon extends Component {
           configureNotification={this.configureNotification}
           showNotification={this.showNotification}
         />
-        <Links links={links} />
+        
       </div>
     );
   }
 }
+//<Links links={lis} nk/> (für Social Media einfach einfügen)
+//<Countdown countdownDate={countdown.countdownDate} /> (für Countdown einfügen)
 
 export default ComingSoon;

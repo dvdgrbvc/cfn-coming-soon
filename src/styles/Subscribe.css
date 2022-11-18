@@ -9,7 +9,7 @@
   grid-area: input;
   border-radius: 4px;
   height: 40px;
-  background-color: var(--black);
+  background-color: rgba(207, 207, 207, 0.368);
   border: 1px solid var(--white);
   color: var(--white);
   padding-left: 10px;
@@ -24,7 +24,7 @@
 
 .subscribe-email:focus,
 :hover {
-  border-color: var(--green);
+  border-color: var(--black);
 }
 
 .subscribe-button {

@@ -1,5 +1,5 @@
 :root {
-  --green: #4ecdc4;
+  --green: #1ca73a;
   --darkGrey: #292f36;
   --white: #fffffa;
   --black: #000103;
@@ -19,11 +19,11 @@ html {
 }
 
 body {
-  background-image: url(../images/floating-cogs.svg);
+  background-image: url(../images/feld2.jpg);
   background-color: var(--darkGrey);
   min-height: calc(100vh - 100px);
   margin: 10px;
-  background-attachment: fixed;
+  background-attachment: local;
 }
 
 *,
